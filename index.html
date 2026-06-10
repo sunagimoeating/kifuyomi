@@ -27,14 +27,14 @@
                 <!-- 左：トグル群 -->
                 <div class="toggles">
                     <label class="toggle-switch">
+                        <input type="checkbox" id="guide-toggle" checked>
+                        <span class="slider"></span>
+                        <span class="toggle-label">目盛り</span>
+                    </label>
+                    <label class="toggle-switch">
                         <input type="checkbox" id="turn-toggle">
                         <span class="slider"></span>
                         <span class="toggle-label">後手</span>
-                    </label>
-                    <label class="toggle-switch">
-                        <input type="checkbox" id="guide-toggle">
-                        <span class="slider"></span>
-                        <span class="toggle-label">目盛り</span>
                     </label>
                 </div>
 
@@ -53,7 +53,7 @@
             -->
             <div class="board-container" id="board-container">
                 <!-- 列目盛り（先手: top, 後手: bottom） -->
-                <div class="board-guides horizontal-guide hidden" id="h-guide">
+                <div class="board-guides horizontal-guide" id="h-guide">
                     <span>９</span><span>８</span><span>７</span><span>６</span><span>５</span><span>４</span><span>３</span><span>２</span><span>１</span>
                 </div>
                 <!-- 盤面 -->
@@ -61,7 +61,7 @@
                     <!-- JSでマスを生成 -->
                 </div>
                 <!-- 行目盛り（先手: right, 後手: left） -->
-                <div class="board-guides vertical-guide hidden" id="v-guide">
+                <div class="board-guides vertical-guide" id="v-guide">
                     <span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>七</span><span>八</span><span>九</span>
                 </div>
             </div>

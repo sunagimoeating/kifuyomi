@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kifuyomi-v2';
+const CACHE_NAME = 'kifuyomi-v3';
 const APP_ASSETS = [
     './',
     './index.html',

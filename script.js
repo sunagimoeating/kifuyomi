@@ -202,8 +202,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 目盛りトグル（デフォルトOFF）
+    // 目盛りトグル（デフォルトON）
     if (guideToggle) {
+        guideToggle.checked = true;
+        hGuide && hGuide.classList.remove('hidden');
+        vGuide && vGuide.classList.remove('hidden');
+
         guideToggle.addEventListener('change', (e) => {
             if (e.target.checked) {
                 hGuide && hGuide.classList.remove('hidden');
